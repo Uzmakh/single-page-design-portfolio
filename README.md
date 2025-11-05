@@ -65,9 +65,12 @@ then run npm run build, you have dist folder
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist",
   }
-- Now run-
-  npm run deploy
+
   -push the changes to remote on GitHub
+
+  - Now run-
+    npm run deploy
+  - change the branch to gh-pages
 
 ### What I learned
 

@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -11,23 +18,23 @@
       href="./assets/favicon-32x32.png"
     />
 
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
   <body>
-    <!!-- HEADER --!!>
+    <!-- HEADER   -->
     <header>
       <a href="#">
-        <img src="src/assets/logo.svg" alt="website-logo" />
+        <img src="./assets/logo.svg" alt="website-logo" />
       </a>
       <a href="#" class="btn btn-header"> Free Consultation </a>
     </header>
-    <!-- ******* -->
-    <!!-- MAIN --!!>
-    <!-- ******* -->
+
+    <!-- MAIN -->
+
     <main>
-      <!!-- BANNER --!!>
+      <!--BANNER  -->
       <section class="banner">
         <h1>Design solutions made easy</h1>
         <p>
@@ -35,7 +42,8 @@
           your one-stop shop for your design needs.
         </p>
       </section>
-      <!!-- SKILLS --!!>
+
+      <!--  SKILLS -->
       <section class="skills">
         <article class="skill skill-one md:row-span-2">
           <img
@@ -71,7 +79,8 @@
           <h3 class="title">Motion Graphics</h3>
         </article>
       </section>
-      <!!-- PROFILE --!!>
+
+      <!--PROFILE   -->
       <section
         class="profile py-10 container mx-auto md:container md:mx-auto lg:container lg:mx-auto lg:flex lg:gap-20 lg:justify-between lg:items-center"
       >
@@ -96,7 +105,8 @@
           <a href="#" class="btn btn-profile"> Free Consultation</a>
         </article>
       </section>
-      <!!-- WORK-SLIDER --!!>
+
+      <!--WORK-SLIDER   -->
       <section class="work-slider">
         <h2>My Work</h2>
         <div class="slides scroll">
@@ -131,7 +141,8 @@
           />
         </div>
       </section>
-      <!!-- CALL-TO-ACTION --!!>
+
+      <!--CALL-TO-ACTION   -->
       <section class="call-to-action">
         <div class="cta-detail">
           <h2 class="text-[#fff7f0]">Book a call with me</h2>
@@ -146,7 +157,9 @@
         </div>
       </section>
     </main>
-    <!!-- FOOTER --!!>
+
+    <!-- FOOTER -->
+
     <footer>
       <a href="#">
         <img src="./assets/logo.svg" alt="website-logo" />
@@ -154,6 +167,6 @@
       <a href="#" class="btn btn-footer"> Free Consultation </a>
     </footer>
     <!-- Js file linking -->
-    <script src="index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

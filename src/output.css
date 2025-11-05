@@ -209,9 +209,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .w-\[70\%\] {
     width: 70%;
   }
