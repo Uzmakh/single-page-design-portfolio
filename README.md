@@ -42,6 +42,31 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Installed vite to have a server that automatically refreshes
+- I added this in scripts of package.json "build": "vite build", // build for production
+- create vite.config.js file and paste this code there,
+
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+root: 'src', // Set source directory
+build: {
+outDir: '../dist', // Output to root's 'dist' folder
+emptyOutDir: true
+}
+});
+then run npm run build, you have dist folder
+
+- Install gh-pages
+  npm install --save-dev gh-pages
+- Add these lines to package.json
+  "homepage": "https://yourusername.github.io/repo-name",
+  "scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+  }
+- Now run-
+  npm run deploy
 
 ### What I learned
 

@@ -1,16 +1,24 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.16",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.16",
+    "vite": "^7.2.0"
   },
+  "homepage": "https://uzmakh.github.io/single-page-design-portfolio",
   "name": "single-page-design-portfolio",
   "version": "1.0.0",
   "description": "This is frontend mentor challenge - a profile landing page built with tailwind css in simple html and Vanilla JS",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch":"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "build": "vite build",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
