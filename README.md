@@ -63,10 +63,11 @@ then run npm run build, you have dist folder
   "homepage": "https://yourusername.github.io/repo-name",
   "scripts": {
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d dist",
   }
 - Now run-
   npm run deploy
+  -push the changes to remote on GitHub
 
 ### What I learned
 
