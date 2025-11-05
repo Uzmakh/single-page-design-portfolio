@@ -1,0 +1,192 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@theme {
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --neutral-900: #030303;
+  --color-gray-600: #6a6662;
+  --color-gray: oklch(37.1% 0 0);
+  --neutral-200: #fff7f0;
+  --neutral-0: #ffffff;
+  --light-red-500: #e16b5b;
+  --galactic-blue: #755cde;
+  --summer-yellow-500: #f6a560;
+  --pink-500: #f39e9e;
+  --cyan-500: #61c4b7;
+  --dark-purple-500: #552049;
+}
+
+@layer utilities {
+  .container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-inline: 12px;
+  }
+
+  /** section - SKILLS */
+  .skill-one {
+    background-color: var(--galactic-blue);
+    width: 343px;
+    height: 364px;
+  }
+
+  .title {
+    @apply absolute bottom-2 left-3;
+  }
+
+  .skill-two {
+    background-color: var(--summer-yellow-500);
+    width: 159.5px;
+    height: 182px;
+  }
+
+  .skill-three {
+    background-color: var(--pink-500);
+    width: 159.5px;
+    height: 182px;
+  }
+
+  .skill-four {
+    background-color: var(--light-red-500);
+    width: 343px;
+    height: 162px;
+  }
+
+  .skill-five {
+    background-color: var(--cyan-500);
+    width: 343px;
+    height: 162px;
+  }
+
+  .skill-six {
+    background-color: var(--dark-purple-500);
+    width: 343px;
+    height: 162px;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  body {
+    background: var(--neutral-200);
+
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    @apply text-center text-[35px] text-neutral-800 font-bold mb-2 leading-10 md:w-[538px] md:mx-auto md:leading-14 md:text-[56px] lg:w-full lg:leading-12;
+  }
+
+  h2 {
+    @apply text-[#030303] text-center text-[35px] font-bold mb-2;
+  }
+
+  h3 {
+    @apply absolute text-white font-bold;
+  }
+
+  p {
+    @apply text-center text-[18px] text-gray py-6 px-4 md:text-[22px] lg:text-[24px] xl:text-[26px] lg:max-w-3/4 lg:mx-auto md:py-6 lg:py-3;
+  }
+
+  button {
+    font: inherit;
+  }
+}
+
+
+
+@layer components {
+
+  header,
+  footer,
+  section {
+    @apply my-10;
+  }
+
+  header,
+  footer {
+    @apply flex justify-between items-center px-8 sm:container sm:mx-auto sm:px-10 md:container md:max-w-[950px] md:mx-auto lg:container lg:mx-auto xl:container xl:max-w-[1100px] xl:mx-auto;
+  }
+
+  .btn {
+    @apply font-bold text-neutral-100 rounded-4xl py-3 px-8 cursor-pointer;
+  }
+
+  .btn-header,
+  .btn-footer {
+    @apply bg-neutral-900 text-white hover:bg-[#755cde] focus:outline-black font-bold;
+  }
+
+  .btn-profile,
+  .btn-cta {
+    @apply bg-[#e16b5b] hover:bg-[#F6A560];
+  }
+
+  /** section - BANNER */
+  .banner {
+    @apply px-4 md:mx-auto md:container lg:container xl:container
+  }
+
+  /** section - SKILLS */
+  .skills {
+    @apply md:container md:mx-auto lg:container lg:mx-auto lg:px-16 relative grid gap-3 grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .skill {
+    @apply relative max-w-full rounded;
+  }
+
+
+
+  /** section - WORK-SLIDER */
+  .work-slider {
+    @apply flex flex-col items-center justify-center overflow-x-hidden;
+  }
+
+  .slides {
+    @apply mt-8 flex max-w-[full] gap-2 object-cover relative overflow-x-scroll whitespace-nowrap scroll-smooth;
+  }
+
+  .slide-img {
+    @apply flex-none lg:max-w-3/5;
+  }
+
+  .slide-img img {
+    @apply h-auto w-full inline-block rounded-xl lg:w-[95%];
+  }
+
+  .slide-btns .arrow {
+    @apply bg-[#030303] inline-block my-6 p-3 md:p-4 lg:p-5 rounded-full ms-2 cursor-pointer hover:bg-[#755cde] transition duration-1000;
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+  }
+
+  .slides::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+  }
+
+  /** section- CALL-TO-ACTION */
+  .call-to-action {
+    @apply mx-4 bg-neutral-900 rounded-xl py-12 px-4 lg:w-6/7 lg:mx-auto lg:flex lg:justify-around lg:items-center;
+  }
+
+  .cta-detail {
+    @apply lg:w-[70%] lg:flex lg:flex-col lg:items-start;
+  }
+}

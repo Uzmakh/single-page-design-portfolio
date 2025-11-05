@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  },
+  "name": "single-page-design-portfolio",
+  "version": "1.0.0",
+  "description": "This is frontend mentor challenge - a profile landing page built with tailwind css in simple html and Vanilla JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch":"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

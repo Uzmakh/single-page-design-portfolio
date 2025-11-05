@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Single-page design portfolio</title>
+  </head>
+  <body>
+    <!!-- HEADER --!!>
+    <header>
+      <a href="#">
+        <img src="./assets/logo.svg" alt="website-logo" />
+      </a>
+      <a href="#" class="btn btn-header"> Free Consultation </a>
+    </header>
+    <!-- ******* -->
+    <!!-- MAIN --!!>
+    <!-- ******* -->
+    <main>
+      <!!-- BANNER --!!>
+      <section class="banner">
+        <h1>Design solutions made easy</h1>
+        <p>
+          With over ten years of experience in various design disciplines, I’m
+          your one-stop shop for your design needs.
+        </p>
+      </section>
+      <!!-- SKILLS --!!>
+      <section class="skills">
+        <article class="skill skill-one md:row-span-2">
+          <img
+            src="./assets/pattern-graphic-design.svg"
+            alt=" Graphic Design"
+          />
+          <h3 class="title">Graphic Design</h3>
+        </article>
+        <div class="grid grid-cols-2 gap-5">
+          <article class="skill skill-two">
+            <img src="./assets/pattern-ui-ux.svg" alt="UI/UX" />
+            <h3 class="title">UI/UX</h3>
+          </article>
+          <article class="skill skill-three">
+            <img src="./assets/pattern-apps.svg" alt="Apps" />
+            <h3 class="title">Apps</h3>
+          </article>
+        </div>
+        <article class="skill skill-four">
+          <img src="./assets/pattern-photography.svg" alt="Photography" />
+          <h3 class="title">Photography</h3>
+        </article>
+
+        <article class="skill skill-five">
+          <img src="./assets/pattern-photography.svg" alt="Illustrations" />
+          <h3 class="title">Illustrations</h3>
+        </article>
+        <article class="skill skill-six">
+          <img
+            src="./assets/pattern-motion-graphics.svg"
+            alt=" Motion Graphics"
+          />
+          <h3 class="title">Motion Graphics</h3>
+        </article>
+      </section>
+      <!!-- PROFILE --!!>
+      <section
+        class="profile py-10 container mx-auto md:container md:mx-auto lg:container lg:mx-auto lg:flex lg:gap-20 lg:justify-between lg:items-center"
+      >
+        <div class="w-[70%] mx-auto md:w-[60%] lg:w-[40%]">
+          <img
+            src="./assets/image-amy.webp"
+            alt="Amy"
+            class="amy-image block w-full"
+          />
+        </div>
+        <article
+          class="profile-info py-12 lg:w-[60%] lg:py-0 lg:flex lg:flex-col lg:justify-start lg:items-start"
+        >
+          <h1 class="md:w-full lg:text-[36px] lg:text-start">
+            I’m Amy, and I’d love to work on your next project
+          </h1>
+          <p class="lg:text-start lg:me-36">
+            I love working with others to create beautiful design solutions.
+            I’ve designed everything from brand illustrations to complete mobile
+            apps. I’m also handy with a camera!
+          </p>
+          <a href="#" class="btn btn-profile"> Free Consultation</a>
+        </article>
+      </section>
+      <!!-- WORK-SLIDER --!!>
+      <section class="work-slider">
+        <h2>My Work</h2>
+        <div class="slides scroll">
+          <div class="slide-img">
+            <img src="./assets/image-slide-1.jpg" alt="image-work-one" />
+          </div>
+          <div class="slide-img">
+            <img src="./assets/image-slide-2.jpg" alt="image-work-two" />
+          </div>
+          <div class="slide-img">
+            <img src="./assets/image-slide-3.jpg" alt="image-work-three" />
+          </div>
+          <div class="slide-img">
+            <img src="./assets/image-slide-4.jpg" alt="image-work-four" />
+          </div>
+          <div class="slide-img">
+            <img src="./assets/image-slide-5.jpg" alt="image-work-five" />
+          </div>
+        </div>
+        <div class="slide-btns">
+          <img
+            src="./assets/icon-arrow-left.svg"
+            alt="arrow-left"
+            class="arrow"
+            id="slide-btn-prev"
+          />
+          <img
+            src="./assets/icon-arrow-right.svg"
+            alt="arrow-right"
+            class="arrow"
+            id="slide-btn-next"
+          />
+        </div>
+      </section>
+      <!!-- CALL-TO-ACTION --!!>
+      <section class="call-to-action">
+        <div class="cta-detail">
+          <h2 class="text-[#fff7f0]">Book a call with me</h2>
+          <p class="text-[#fff7f0] lg:mt-4 lg:w-full lg:text-start lg:me-36">
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <div>
+          <a href="#" class="btn btn-cta lg:w-[30%]"> Free Consultation </a>
+        </div>
+      </section>
+    </main>
+    <!!-- FOOTER --!!>
+    <footer>
+      <a href="#">
+        <img src="./assets/logo.svg" alt="website-logo" />
+      </a>
+      <a href="#" class="btn btn-footer"> Free Consultation </a>
+    </footer>
+    <!-- Js file linking -->
+    <script src="index.js"></script>
+  </body>
+</html>
